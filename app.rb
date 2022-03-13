@@ -7,7 +7,7 @@ class BirthdayApp < Sinatra::Base
   end
 
   get '/' do
-    'Birthday App'
+    erb(:index)
   end
 
   run! if app_file == $0
