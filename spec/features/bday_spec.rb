@@ -18,3 +18,11 @@ feature 'testing the homepage' do
     expect(page).to have_button("Submit")
   end
 end
+feature 'tests the result page' do
+  scenario 'holds the user name' do
+    visit('/')
+    fill_in 'user_name',with 'Nico'
+    fill_in 'user_bday',with '28/10/1992'
+    
+  end
+end

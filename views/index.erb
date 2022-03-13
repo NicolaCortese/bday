@@ -1,11 +1,28 @@
 <h1>Birthday App</h1>
 <div>
-  <form>
+  <form action='/result' method='get'>
   What is your name?
   <input type="text" name="user_name">
   <br>
   What is your bday?
-  <input type="text" name="user_bday">
+  <select name="day" id="day">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  </select>
+  <select name="month" id="month">
+  <option value="Jan">Jan</option>
+  <option value="Feb">Feb</option>
+  <option value="Mar">Mar</option>
+  <option value="Apr">Apr</option>
+  </select>
+  <select name="year" id="year">
+  <option value="1992">1992</option>
+  <option value="1993">1993</option>
+  <option value="1994">1994</option>
+  <option value="1995">1995</option>
+  </select>
   <br>
   <input type="submit" value="Submit">
   </form>
